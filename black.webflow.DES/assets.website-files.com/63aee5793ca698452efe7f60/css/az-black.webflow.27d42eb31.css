@@ -3614,7 +3614,7 @@ figcaption {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .form-block {
