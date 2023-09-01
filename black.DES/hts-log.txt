@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 01 Sep 2023 19:26:26 at https://az-black.webflow.io/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://az-black.webflow.io/ -O1 "C:\Users\vishn\OneDrive\Desktop\Neura Website stuff\black.DES" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:26:27	Error: 	"Bad Gateway" (502) after 2 retries at link https://az-black.webflow.io/robots.txt (from primary/primary)
+19:26:31	Warning: 	Retry after error 502 (Bad Gateway) at link https://az-black.webflow.io/template/style-guide (from https://az-black.webflow.io/)
+19:26:31	Warning: 	Retry after error 502 (Bad Gateway) at link https://az-black.webflow.io/template/change-log (from https://az-black.webflow.io/)
+19:26:31	Warning: 	Retry after error 502 (Bad Gateway) at link https://az-black.webflow.io/template/licensing (from https://az-black.webflow.io/)
+19:26:31	Warning: 	Retry after error 502 (Bad Gateway) at link https://az-black.webflow.io/template/instructions (from https://az-black.webflow.io/)
+19:26:32	Warning: 	Retry after error 502 (Bad Gateway) at link https://az-black.webflow.io/template/style-guide (from https://az-black.webflow.io/)
+19:26:32	Warning: 	Retry after error 502 (Bad Gateway) at link https://az-black.webflow.io/template/change-log (from https://az-black.webflow.io/)
+19:26:32	Warning: 	Retry after error 502 (Bad Gateway) at link https://az-black.webflow.io/template/licensing (from https://az-black.webflow.io/)
+19:26:32	Warning: 	Retry after error 502 (Bad Gateway) at link https://az-black.webflow.io/template/instructions (from https://az-black.webflow.io/)
+19:26:32	Error: 	"Bad Gateway" (502) after 2 retries at link https://az-black.webflow.io/template/style-guide (from https://az-black.webflow.io/)
+19:26:32	Error: 	"Bad Gateway" (502) after 2 retries at link https://az-black.webflow.io/template/change-log (from https://az-black.webflow.io/)
+19:26:32	Error: 	"Bad Gateway" (502) after 2 retries at link https://az-black.webflow.io/template/licensing (from https://az-black.webflow.io/)
+19:26:32	Error: 	"Bad Gateway" (502) after 2 retries at link https://az-black.webflow.io/template/instructions (from https://az-black.webflow.io/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 seconds : 20 links scanned, 7 files written (606319 bytes overall) [172243 bytes received at 28707 bytes/sec], 568009 bytes transferred using HTTP compression in 4 files, ratio 21%, 2.8 requests per connection
+(5 errors, 8 warnings, 0 messages)
