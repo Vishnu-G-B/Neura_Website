@@ -3469,6 +3469,14 @@ figcaption {
   text-align: center;
 }
 
+.hero-paragraph-holder p {
+  font-size: 2.2vw;
+
+  @media screen and (max-width:567px) {
+    font-size: 4vw;
+  }
+}
+
 .hero-section-text-holder {
   display: -webkit-box;
   display: -webkit-flex;

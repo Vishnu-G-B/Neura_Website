@@ -20908,6 +20908,1006 @@ Webflow.require("ix2").init({
             useFirstGroupAsInitialState: true,
             createdOn: 1674658295409,
         },
+        "a-54": {
+            id: "a-54",
+            title: "🕧 Default On Load",
+            actionItemGroups: [
+              {
+                actionItems: [
+                  {
+                    id: "a-54-n",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-01",
+                        selectorGuids: ["6db4ed9e-75ff-2589-ebc8-461f43d1940e"],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-55",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".navbar",
+                        selectorGuids: ["e120672f-745f-faa1-71e7-c904666db13c"],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-3",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-01",
+                        selectorGuids: ["6db4ed9e-75ff-2589-ebc8-461f43d1940e"],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-2",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-01",
+                        selectorGuids: ["6db4ed9e-75ff-2589-ebc8-461f43d1940e"],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-4",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-02",
+                        selectorGuids: ["48e09963-7782-9d34-ef4c-234e60e3fd30"],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-6",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-02",
+                        selectorGuids: ["48e09963-7782-9d34-ef4c-234e60e3fd30"],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-5",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-02",
+                        selectorGuids: ["48e09963-7782-9d34-ef4c-234e60e3fd30"],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-7",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-03",
+                        selectorGuids: ["df83a443-3a4f-2222-5efe-4d796b05a6e1"],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-9",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-03",
+                        selectorGuids: ["df83a443-3a4f-2222-5efe-4d796b05a6e1"],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-8",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-03",
+                        selectorGuids: ["df83a443-3a4f-2222-5efe-4d796b05a6e1"],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-19",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._1",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "3775fc90-aeb8-2131-e7d9-8b583561d468",
+                        ],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-21",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._1",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "3775fc90-aeb8-2131-e7d9-8b583561d468",
+                        ],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-20",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._1",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "3775fc90-aeb8-2131-e7d9-8b583561d468",
+                        ],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-22",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._2",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "0dca4e72-c02f-b997-9024-6cd7a93f724a",
+                        ],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-24",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._2",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "0dca4e72-c02f-b997-9024-6cd7a93f724a",
+                        ],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-23",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._2",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "0dca4e72-c02f-b997-9024-6cd7a93f724a",
+                        ],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-25",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._3",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "06d8af2b-2779-cb8f-7aea-6351b38c7069",
+                        ],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-27",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._3",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "06d8af2b-2779-cb8f-7aea-6351b38c7069",
+                        ],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-26",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._3",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "06d8af2b-2779-cb8f-7aea-6351b38c7069",
+                        ],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-28",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._4",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "c92e2298-ed40-811f-0ea6-4cadb48e16d4",
+                        ],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-30",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._4",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "c92e2298-ed40-811f-0ea6-4cadb48e16d4",
+                        ],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-29",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-number._4",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "c92e2298-ed40-811f-0ea6-4cadb48e16d4",
+                        ],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-31",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-phone-container",
+                        selectorGuids: ["fdd5ce20-49b3-5184-91b6-79fe8bee806b"],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-33",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-phone-container",
+                        selectorGuids: ["fdd5ce20-49b3-5184-91b6-79fe8bee806b"],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-32",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".features-phone-container",
+                        selectorGuids: ["fdd5ce20-49b3-5184-91b6-79fe8bee806b"],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-49",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-04",
+                        selectorGuids: ["2fd06b03-c0e2-b5f3-486d-9e6dc1fea90a"],
+                      },
+                      yValue: 30,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-51",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-04",
+                        selectorGuids: ["2fd06b03-c0e2-b5f3-486d-9e6dc1fea90a"],
+                      },
+                      value: 0,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-50",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "",
+                      duration: 500,
+                      target: {
+                        selector: ".animate-on-load-04",
+                        selectorGuids: ["2fd06b03-c0e2-b5f3-486d-9e6dc1fea90a"],
+                      },
+                      yValue: 32,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                ],
+              },
+              {
+                actionItems: [
+                  {
+                    id: "a-54-n-10",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 0,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-01",
+                        selectorGuids: ["6db4ed9e-75ff-2589-ebc8-461f43d1940e"],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-12",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 0,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-01",
+                        selectorGuids: ["6db4ed9e-75ff-2589-ebc8-461f43d1940e"],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-11",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 0,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-01",
+                        selectorGuids: ["6db4ed9e-75ff-2589-ebc8-461f43d1940e"],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-14",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 150,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-02",
+                        selectorGuids: ["48e09963-7782-9d34-ef4c-234e60e3fd30"],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-13",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 150,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-02",
+                        selectorGuids: ["48e09963-7782-9d34-ef4c-234e60e3fd30"],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-15",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 150,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-02",
+                        selectorGuids: ["48e09963-7782-9d34-ef4c-234e60e3fd30"],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-17",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 300,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-03",
+                        selectorGuids: ["df83a443-3a4f-2222-5efe-4d796b05a6e1"],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-16",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 300,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-03",
+                        selectorGuids: ["df83a443-3a4f-2222-5efe-4d796b05a6e1"],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-18",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 300,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-03",
+                        selectorGuids: ["df83a443-3a4f-2222-5efe-4d796b05a6e1"],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-35",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 450,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._1",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "3775fc90-aeb8-2131-e7d9-8b583561d468",
+                        ],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-34",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 450,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._1",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "3775fc90-aeb8-2131-e7d9-8b583561d468",
+                        ],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-36",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 450,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._1",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "3775fc90-aeb8-2131-e7d9-8b583561d468",
+                        ],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-52",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 450,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-04",
+                        selectorGuids: ["2fd06b03-c0e2-b5f3-486d-9e6dc1fea90a"],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-54",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 450,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-04",
+                        selectorGuids: ["2fd06b03-c0e2-b5f3-486d-9e6dc1fea90a"],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-53",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 450,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".animate-on-load-04",
+                        selectorGuids: ["2fd06b03-c0e2-b5f3-486d-9e6dc1fea90a"],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-37",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 600,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._2",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "0dca4e72-c02f-b997-9024-6cd7a93f724a",
+                        ],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-39",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 600,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._2",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "0dca4e72-c02f-b997-9024-6cd7a93f724a",
+                        ],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-38",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 600,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._2",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "0dca4e72-c02f-b997-9024-6cd7a93f724a",
+                        ],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-56",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 600,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".navbar",
+                        selectorGuids: ["e120672f-745f-faa1-71e7-c904666db13c"],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-40",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 750,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._3",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "06d8af2b-2779-cb8f-7aea-6351b38c7069",
+                        ],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-42",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 750,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._3",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "06d8af2b-2779-cb8f-7aea-6351b38c7069",
+                        ],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-41",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 750,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._3",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "06d8af2b-2779-cb8f-7aea-6351b38c7069",
+                        ],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-43",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 900,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._4",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "c92e2298-ed40-811f-0ea6-4cadb48e16d4",
+                        ],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-45",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 900,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._4",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "c92e2298-ed40-811f-0ea6-4cadb48e16d4",
+                        ],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                  {
+                    id: "a-54-n-44",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 900,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-number._4",
+                        selectorGuids: [
+                          "e740349a-0fe4-d6dd-46bb-a58197d1ae6e",
+                          "c92e2298-ed40-811f-0ea6-4cadb48e16d4",
+                        ],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-46",
+                    actionTypeId: "TRANSFORM_ROTATE",
+                    config: {
+                      delay: 1050,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-phone-container",
+                        selectorGuids: ["fdd5ce20-49b3-5184-91b6-79fe8bee806b"],
+                      },
+                      yValue: 0,
+                      xUnit: "DEG",
+                      yUnit: "deg",
+                      zUnit: "DEG",
+                    },
+                  },
+                  {
+                    id: "a-54-n-48",
+                    actionTypeId: "STYLE_OPACITY",
+                    config: {
+                      delay: 1050,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-phone-container",
+                        selectorGuids: ["fdd5ce20-49b3-5184-91b6-79fe8bee806b"],
+                      },
+                      value: 1,
+                      unit: "",
+                    },
+                  },
+                  {
+                    id: "a-54-n-47",
+                    actionTypeId: "TRANSFORM_MOVE",
+                    config: {
+                      delay: 1050,
+                      easing: "ease",
+                      duration: 700,
+                      target: {
+                        selector: ".features-phone-container",
+                        selectorGuids: ["fdd5ce20-49b3-5184-91b6-79fe8bee806b"],
+                      },
+                      yValue: 0,
+                      xUnit: "PX",
+                      yUnit: "px",
+                      zUnit: "PX",
+                    },
+                  },
+                ],
+              },
+            ],
+            useFirstGroupAsInitialState: true,
+            createdOn: 1682584065846,
+          },
     },
     site: {
         mediaQueries: [
@@ -20918,3 +21918,9 @@ Webflow.require("ix2").init({
         ],
     },
 });
+
+Webflow.require("commerce") &&
+  Webflow.require("commerce").init({
+    siteId: "643e8219320d012584af3b6d",
+    apiUrl: "https://render.webflow.com",
+  });
