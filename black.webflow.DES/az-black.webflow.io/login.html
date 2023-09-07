@@ -108,6 +108,9 @@
       src="https://kit.fontawesome.com/631b98025b.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+
   </head>
   <body>
 
@@ -195,19 +198,19 @@
         <div class="container-logo">
             <div class="logo-holder">
                 <div class="letter features-number left">
-                    <h2 class="flip-in-ver-left">N</h2>
+                    <h2>N</h2>
                 </div>
                 <div class="letter features-number right mt-n100">
-                    <h2 class="flip-in-ver-left-3ms">E</h2>
+                    <h2 class="delay-2">E</h2>
                 </div>
                 <div class="letter features-number left mt-n100">
-                    <h2 class="flip-in-ver-left-6ms">U</h2>
+                    <h2 class="delay-4">U</h2>
                 </div>
                 <div class="letter features-number right mt-n100">
-                    <h2 class="flip-in-ver-left-9ms">R</h2>
+                    <h2 class="delay-6">R</h2>
                 </div>
                 <div class="letter features-number left mt-n100 center">
-                    <h2 class="flip-in-ver-left-12ms">A</h2>
+                    <h2 class="delay-8">A</h2>
                 </div>
             </div>
         </div>
@@ -220,21 +223,25 @@
                 <form class="input-form">
                     <div class="input-container ">
                         <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Username" required>
+                        <input type="text" id="username2" name="username" placeholder="Username" required>
                     </div>
                     <div class="input-container">
                         <label for="username">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <input type="password" id="password2" name="password" placeholder="Password" required>
                     </div>
                 </form>
                 <div class="button-container">
-                    <button type="submit">Login</button>
+                    <button id="login" type="submit" onclick="signInRequest();">Login</button> 
+                </div>
+                <div id="liveAlertPlaceholder" class="">
                 </div>
                 <div class="text">
                     New Here?? &nbsp; <a href="sign-up.html">Register Now!!</a>
                 </div>
             </div>
         </div>
+
+        <div id="tempQRCode"></div>
 
     </div>
 
@@ -244,7 +251,8 @@
       type="text/javascript"
     ></script>
     <script src="../assets.website-files.com/63aee5793ca698452efe7f60/js/login.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script> -->
     <!--[if lte IE 9
       ]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script
     ><![endif]-->

@@ -36,7 +36,7 @@
   /* text-align: center; */
   width: 30vw;
   min-width: 370px;
-  height: 70vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -59,8 +59,15 @@
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 4.5vw;
-  background-image:linear-gradient(48deg, #bababa 22%, rgba(255, 255, 255, 0) 52%), linear-gradient(270deg, #eec5bd, #f3b1a5 39%, #c6caf6 78%, #dad9e9); 
+  background-image: linear-gradient(
+  45deg,
+  hsl(268deg 34% 46%) 0%,
+  hsl(281deg 32% 48%) 30%,
+  hsl(284deg 29% 64%) 50%,
+  hsl(276deg 43% 85%) 100%
+);
   background-clip: text;
+  animation: textShine 2s ease-in-out infinite alternate;
 
   @media screen and (max-width:567px) {
     font-size: 20vw;
@@ -69,6 +76,14 @@
 
 .input-container {
   margin:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,6 +128,7 @@ input[type="password"] {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 10px;
 
   @media screen and (max-width:567px) {
     flex: 0 0 150%;
@@ -141,31 +157,10 @@ button[type="submit"]:hover {
   box-shadow: 0 0 30px 18px #2e2424 ;
 }
 
-.flip-in-ver-left {
-	-webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.flip-in-ver-left-3ms {
-	-webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
-	        animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 300ms both;
-}
-
-.flip-in-ver-left-6ms {
+.flip-in-ver-left-9ms {
 	-webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 600ms both;
 	        animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 600ms both;
 }
-
-.flip-in-ver-left-9ms {
-	-webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 900ms both;
-	        animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 900ms both;
-}
-
-.flip-in-ver-left-12ms {
-	-webkit-animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1200ms both;
-	        animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1200ms both;
-}
-
 @-webkit-keyframes flip-in-ver-left {
   0% {
     -webkit-transform: rotateY(80deg);
@@ -271,30 +266,43 @@ button[type="submit"]:hover {
 }
 
 .features-number h2 {
-  background: linear-gradient(
-    48deg,
-    #000 22%,
-    rgba(255, 255, 255, 0) 52%
-  ),
-  linear-gradient(
-    270deg,
-    #eec5bd,
-    #f3b1a5 39%,
-    #c6caf6 78%,
-    #dad9e9 80%
+  background:  linear-gradient(
+    45deg,
+    hsl(340deg 69% 3%) 0%,
+    hsl(261deg 43% 17%) 10%,
+    hsl(267deg 35% 38%) 27%,
+    hsl(276deg 33% 47%) 50%,
+    hsl(285deg 29% 58%) 74%,
+    hsl(276deg 43% 85%) 100%
   );
   -webkit-text-fill-color: transparent;
-  /* background: linear-gradient(48deg, #000 22%, rgba(255, 255, 255, 0) 52%), linear-gradient(270deg, #eec5bd, #f3b1a5 39%, #c6caf6 78%, #dad9e9); */
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 1em;
   font-weight: 800;
   margin: 0;
   padding: 0;
-  background-size: 150% auto;
-  animation: textShine 5s ease-in-out infinite alternate
-  /* animation: gradient 10s ease infinite; */
+  background-size: 300% auto;
+  animation: textShine 3s ease-in-out infinite alternate, flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+.features-number h2.delay-2 {
+  animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 200ms both,textShine 3s ease-in-out infinite alternate;
+}
+
+.features-number h2.delay-4 {
+  animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 400ms both,textShine 3s ease-in-out infinite alternate;
+}
+
+.features-number h2.delay-6 {
+  animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 600ms both,textShine 3s ease-in-out infinite alternate;
+}
+
+.features-number h2.delay-8 {
+  animation: flip-in-ver-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 800ms both,textShine 3s ease-in-out infinite alternate;
+}
+
+
 @keyframes textShine {
   0% {
       background-position: 0% 50%;
@@ -321,3 +329,84 @@ button[type="submit"]:hover {
     font-size: 7em;
   }
 }
+
+.liveAlertPlaceholder {
+  flex: 0 0 100%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.alert {
+  /* width: 100%;
+  height: 100%; */
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  box-shadow: 0 0 30px 18px #2e2424;
+
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* EVENT PAGE STYLES!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.form-container-even {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 20px; */
+  margin-top: 110px;
+
+  @media screen and (max-width:567px) {
+    flex-direction: column;
+  }
+}
+
+.form-container-even .main-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 50vw;
+  margin-left: 7vw;
+}
+
+.features-number h2.event-page {
+  background:  linear-gradient(
+    45deg,
+  hsl(268deg 34% 46%) 0%,
+  hsl(281deg 32% 48%) 30%,
+  hsl(284deg 29% 64%) 50%,
+  hsl(276deg 43% 85%) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 1em;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  background-size: 300% auto;
+  animation: textShine 3s ease-in-out infinite alternate;
+}
+
+.continer {
+  margin-right: 30px;
+  background-color: white;
+
+}
+
+.qr-container {
+  padding: 10px;
+}
+
+
+
