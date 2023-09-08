@@ -189,6 +189,12 @@ th {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Logirent";
+  src: url(../Logirent-font.otf) format('opentype');
+}
+
 [class^="w-icon-"],
 [class*=" w-icon-"] {
   font-family: "webflow-icons" !important;
@@ -3229,11 +3235,13 @@ figcaption {
     #c6caf6 72%,
     #dad9e9
   );
+  font-family: "Logirent";
   font-size: 14vw;
   font-weight: 800;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* margin-right: 100px; */
 }
 
 .hero-text._02 {
@@ -3253,6 +3261,7 @@ figcaption {
     #c6caf6 61%,
     #dad9e9 72%
   );
+  font-family: "Logirent";
 }
 
 .gradient-button-holder {
@@ -3329,12 +3338,57 @@ figcaption {
 }
 
 .brand {
-  width: 64px;
-  min-width: 64px;
+  width: 144px;
+  min-width: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 50px; */
 }
 
 .brand-image {
-  width: 100%;
+  object-fit: cover;
+  width: 45px;
+  height: 45px;
+}
+
+.logo-text {
+  font-size: 19px;
+  font-family: "Logirent";
+  margin-top:0 ;
+  margin-bottom: -5px;
+  background-image: linear-gradient(
+  90deg,
+  hsl(261deg 44% 34%) 0%,
+  hsl(263deg 40% 37%) 6%,
+  hsl(265deg 38% 41%) 11%,
+  hsl(267deg 35% 44%) 15%,
+  hsl(271deg 34% 46%) 20%,
+  hsl(276deg 33% 47%) 25%,
+  hsl(282deg 32% 48%) 30%,
+  hsl(288deg 31% 49%) 36%,
+  hsl(285deg 32% 53%) 41%,
+  hsl(282deg 35% 58%) 48%,
+  hsl(279deg 38% 63%) 55%,
+  hsl(276deg 38% 62%) 63%,
+  hsl(273deg 34% 57%) 72%,
+  hsl(271deg 31% 51%) 83%,
+  hsl(268deg 34% 46%) 100%
+);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 500% auto;
+  animation: textShine 4s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }
 
 .nav-link-active-holder {
@@ -4937,6 +4991,7 @@ figcaption {
   opacity: 0.64;
   -webkit-filter: blur(120px);
   filter: blur(120px);
+  font-family: "Logirent";
   font-size: 14vw;
   font-weight: 800;
   -webkit-background-clip: text;
@@ -5579,8 +5634,8 @@ figcaption {
   }
 
   .brand {
-    width: 90px;
-    min-width: 90px;
+    width: 164px;
+    min-width: 164px;
   }
 
   .cricle-active-holder.w--current {
@@ -6835,4 +6890,47 @@ figcaption {
   background-color: #f5f5f5;
   box-shadow: 0 0 13px 0 hsla(0, 0%, 100%, 0.38);
   color: #000;
+}
+
+
+.banner {
+  position: absolute;
+  width: 70vw;
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width:567px){
+    width: 90vw;
+    height: 10vh;
+  }
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Logirent";
+  font-size: 14vw;
+  font-weight: 800;
+  background-color: #000;
+  color: #fff;
+  font-size: 14vw;
+  text-align: center;
+  mix-blend-mode: multiply;
+  user-select: none;
 }

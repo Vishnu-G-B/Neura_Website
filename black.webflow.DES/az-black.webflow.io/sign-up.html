@@ -115,30 +115,41 @@
     role="banner" data-no-scroll="1" data-duration="500" data-doc-height="1">
         <div class="container nav-container">
             <div class="nav-menu-container">
-                <a href="index.html" aria-current="page" class="brand w-nav-brand w--current">
-                <img 
-                    src="https://assets.website-files.com/63aee5793ca698452efe7f60/63aef0ca917c0c177c433ef9_Black Logotype.svg"
+              <a href="index.html" aria-current="page" class="brand w-nav-brand w--current">
+                <!-- <img 
+                    src="../assets.website-files.com/63aee5793ca698452efe7f60/logo.png"
                     loading="lazy"
                     alt=""
                     class="brand-image"
-                />
+                /> -->
+                <span style="display: inline-block; margin-right:3px;">  
+                  <img
+                    src="../assets.website-files.com/63aee5793ca698452efe7f60/logo.png"
+                    loading="lazy"
+                    alt="logo"
+                    class="brand-image"
+                  >
+      
+                </span> 
+                <h2 style="display: inline-block;" class="logo-text">Neura aI</h2> 
                 <!-- <div class="brand w-nav brand w--current">
-                    <a href="index.html" class="brand w-nav brand w--current"></a>
+                  <a href="index.html" class="brand w-nav brand w--current"></a>
                     <div class="nav-link-text-holder">
-                        <div class="nav-link-text">Neura AI</div>
+                      <div class="nav-link-text">Neura AI</div>
                     </div>
-                    </a><a href="index.html" class="brand w-nav brand w--current"></a>
+                  </a><a href="index.html" class="brand w-nav brand w--current"></a>
                 </div> -->
-
-                </a>
+      
+              </a>
                 <nav role="navigation" class="nav-menu w-nav-menu">
                 <div class="nav-link">
                     <div class="nav-link-active-holder">
-                    <a href="index.html#events" class="nav-link-holder w-inline-block">
+                      <a onclick="checkLoggedIn();" class="nav-link-holder w-inline-block">
                         <div class="nav-link-text-holder">
-                        <div class="nav-link-text">Events</div>
+                          <div class="nav-link-text">Events</div>
                         </div>
-                    </a><a href="index.html#events" class="cricle-active-holder w-inline-block"></a>
+                      </a>
+                    <a href="index.html#events" class="cricle-active-holder w-inline-block"></a>
                     </div>
                     <!-- <div class="nav-link-active-holder">
                         <a
@@ -178,7 +189,7 @@
                     </div>
                     </div> -->
                     <div class="nav-button-holder">
-                    <a href="index.html#sign-up" class="button navbar-button w-button">Sign up</a>
+                    <a href="#" class="button navbar-button w-button">Sign up</a>
                     </div>
                 </nav>
                 <div class="menu-button w-nav-button">
@@ -193,7 +204,7 @@
 
     <div class="form-container">
         <div class="container-logo">
-            <div class="logo-holder">
+            <!-- <div class="logo-holder">
                 <div class="letter features-number left">
                     <h2>N</h2>
                 </div>
@@ -209,6 +220,9 @@
                 <div class="letter features-number left mt-n100 center">
                     <h2 class="delay-8">A</h2>
                 </div>
+            </div> -->
+            <div class="logo-text">
+              Neura AI
             </div>
         </div>
 
@@ -219,8 +233,8 @@
                 </div>
                 <form class="input-form">
                     <div class="input-container mt">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Username" required>
+                        <label for="username">Email ID</label>
+                        <input type="text" id="username" name="username" placeholder="Email ID" required>
                     </div>
                     <div class="input-container mt">
                         <label for="username">Password</label>
@@ -232,7 +246,7 @@
                     </div>
                 </form>
                 <div class="button-container ">
-                    <button type="submit" onclick="signUpRequest();">Sign Up</button>
+                    <button type="submit" onclick="signUpRequest();" id="sign-up">Sign Up</button>
                 </div>
                 <div id="liveAlertPlaceholder" class="">
                 </div>
