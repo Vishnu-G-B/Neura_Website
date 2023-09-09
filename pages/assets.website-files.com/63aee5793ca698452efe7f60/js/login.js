@@ -190,7 +190,6 @@ function checkLoggedIn() {
                 createCookie("access_token", response.detail.user_state.access_token);
                 createCookie("refresh_token", response.detail.user_state.refresh_token);
                 createCookie("supabase_id", response.detail.user_state.supabase_id);
-                console.log(document.URL.includes("events.html"));
                 if (!document.URL.includes("events.html")){
                     window.location.replace("events.html");
                 }

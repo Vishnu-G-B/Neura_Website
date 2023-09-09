@@ -3836,6 +3836,11 @@ figcaption {
 .title.smaller {
   margin-bottom: 10px;
   line-height: 1.2;
+  font-size: 7vw;
+  @media screen and (max-width:567px) {
+    font-size: 10vw;
+    text-align: center;
+  }
 }
 
 .experience-section {
@@ -4036,7 +4041,7 @@ figcaption {
 }
 
 .effortlessly-integration-container {
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 .effortlessly-integration-wrapper {
@@ -4320,12 +4325,22 @@ figcaption {
   margin-right: 10px;
   margin-bottom: -14px;
   background-image: linear-gradient(
-    128deg,
-    #eec5bd,
-    #f3b1a5 26%,
-    #c6caf6 74%,
-    #dad9e9
-  );
+  45deg,
+  hsl(180deg 57% 24%) 0%,
+  hsl(180deg 59% 26%) 6%,
+  hsl(180deg 62% 28%) 12%,
+  hsl(180deg 64% 30%) 17%,
+  hsl(180deg 67% 32%) 22%,
+  hsl(180deg 52% 38%) 27%,
+  hsl(180deg 39% 45%) 33%,
+  hsl(180deg 32% 50%) 39%,
+  hsl(180deg 32% 56%) 45%,
+  hsl(180deg 31% 57%) 52%,
+  hsl(180deg 27% 48%) 61%,
+  hsl(180deg 32% 40%) 70%,
+  hsl(180deg 40% 32%) 82%,
+  hsl(180deg 57% 24%) 100%
+);
   font-size: 75px;
   font-weight: 800;
   -webkit-background-clip: text;
@@ -6241,10 +6256,6 @@ figcaption {
     font-size: 24px;
   }
 
-  .effortlessly-integration-wrapper {
-    margin-top: 32px;
-  }
-
   .logo-holder-effortlessly-integration {
     top: 142px;
     grid-column-gap: 24px;
@@ -7009,3 +7020,59 @@ figcaption {
   mix-blend-mode: multiply;
   user-select: none;
 }
+
+.title-holder h1.title{
+  font-size: 12vw;
+}
+
+.fade-in-move-on-scroll {
+  margin-top: -2vw;
+}
+
+.effortlessly-integration-wrapper .about-text-container {
+  max-width: 70vw;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and(max-width:567px){
+    max-width: 90vw;
+    min-width: 90vw;
+    width: 90vw;
+    margin-top: 0;
+  }
+
+}
+
+.text-para-container p {
+  text-align: justify;
+  
+  @media screen and (max-width:567px) {
+    width: 90vw;
+  }
+}
+
+.fade-in-on-scroll.dis-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dis-flex p{
+  text-align: center;
+  max-width: 90vw;
+}
+
+.trusted-content.ml-n80 {
+  margin-left: -80px;
+  @media screen and (max-width:567px) {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
