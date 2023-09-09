@@ -4,7 +4,7 @@
     data-wf-site="63aee5793ca698452efe7f60">
 <!-- Mirrored from az-black.webflow.io/?gspk=OTA0NDY5&gsxid=o2wRtQWcKSuN&utm_medium=affiliate by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 01 Sep 2023 13:06:23 GMT -->
 
-<head>
+<head >
     <meta charset="utf-8" />
     <title>Black - Webflow HTML website template</title>
     <meta content="Black - Webflow HTML website template" name="description" />
@@ -80,7 +80,7 @@
 
 </head>
 
-<body onload="getQR();">
+<body onload="checkLoggedIn();getQR();">
 
     <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium"
         role="banner" data-no-scroll="1" data-duration="500" data-doc-height="1">
@@ -95,7 +95,7 @@
                     /> -->
                     <span style="display: inline-block; margin-right:3px;">  
                       <img
-                        src="../assets.website-files.com/63aee5793ca698452efe7f60/logo.png"
+                        src="../assets.website-files.com/63aee5793ca698452efe7f60/logo-3.png"
                         loading="lazy"
                         alt="logo"
                         class="brand-image"
@@ -175,15 +175,104 @@
     <div class="form-container-even">
 
         <div class="main-title features-number">
-            <h2 class="event-page">IntrO tO NeUra aI</h2>
+            <h2 class="event-page">aI fOr everyone</h2>
         </div>
 
-        <div class="continer">
-            <div id="tempQRCode" class="qr-container">
+        <div class="continer" >
+            <div id="tempQRCode" class="qr-container"></div>
         </div>
-    </div>
 
     </div>
+
+    <section class="timeline-section" style="margin-top: 0;">
+
+        <div class="timeline-container" id="timeline" style="padding-top: 30px;">
+
+            <div class="section-title animate__animated animate__fadeInLeft animate__slow animate_delay-1s">
+                <div class="title-container" style="padding: 10px;">
+                    <span class="title ">Event tImelIne</span>
+                </div>
+            </div>
+
+            <div class="timeline" style="padding-bottom: 50px;"> 
+
+                <div class="timeline__event animate__animated animate__fadeInUp timeline__event--type1">
+
+                    <div class="timeline__event__icon ">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+                
+                    </div>
+                    <div class="timeline__event__date">
+                        Harshit & Samarth
+                    </div>
+                    <div class="timeline__event__content ">
+                        <div class="timeline__event__title" id="timeline__event__title1" style="text-align:center;">
+                        Introduction
+                        </div>
+                        <!-- <div class="timeline__event__description">
+                        <p></p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="timeline__event animate__animated animate__fadeInUp animate__delay-1s timeline__event--type2">
+                    <div class="timeline__event__icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                
+                    </div>
+                    <div class="timeline__event__date">
+                        Samarth
+                    </div>
+                    <div class="timeline__event__content">
+                        <div class="timeline__event__title" id="timeline__event__title2">
+                        A mathematical approach to AI
+                        </div>
+                        <!-- <div class="timeline__event__description">
+                        <p></p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="timeline__event animate__animated animate__fadeInUp animate__delay-2s timeline__event--type3">
+                    <div class="timeline__event__icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                
+                    </div>
+                    <div class="timeline__event__date">
+                        Dr. Kulkarni
+                    </div>
+                    <div class="timeline__event__content">
+                        <div class="timeline__event__title" id="timeline__event__title3">
+                        Opportunities and resources in AI
+                        </div>
+                        <!-- <div class="timeline__event__description">
+                        <p></p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="timeline__event animate__animated animate__fadeInUp animate__delay-3s timeline__event--type1">
+                    <div class="timeline__event__icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                
+                    </div>
+                    <div class="timeline__event__date">
+                        Closing Note
+                    </div>
+                    <div class="timeline__event__content">
+                        <div class="timeline__event__title" id="timeline__event__title4">
+                        Introduction of Neura AI's Core Committee
+                        </div>
+                        <!-- <div class="timeline__event__description">
+                        <p></p>
+                        </div> -->
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
