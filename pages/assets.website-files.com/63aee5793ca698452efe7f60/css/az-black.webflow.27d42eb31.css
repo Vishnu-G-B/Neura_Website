@@ -3627,6 +3627,7 @@ figcaption {
   -ms-flex-direction: column;
   flex-direction: column;
   grid-row-gap: 36px;
+  margin-top: 20px;
 }
 
 .iphone-screen-image {
@@ -6970,7 +6971,7 @@ figcaption {
 .banner {
   position: absolute;
   width: 70vw;
-  height: 40vh;
+  height: 30vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
