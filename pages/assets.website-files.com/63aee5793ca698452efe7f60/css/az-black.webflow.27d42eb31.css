@@ -3893,7 +3893,7 @@ figcaption {
   border: 1px solid #909193;
   background-color: #30363d;
 
-  @media screen and (max-width:1200px){
+  @media screen and (max-width:1205px){
     height: 30vw;
   }
 
@@ -3979,7 +3979,40 @@ figcaption {
   @media screen and (max-width: 1300px){
     margin-top: -4vw;
   }
+}
 
+.teesha-para {
+  @media screen and (max-width:567px) {
+    margin-top: -2vw;
+  }
+}
+
+.experience-card-image-holder._02 .experience-card-image.girik {
+  @media screen and (max-width:1200px) {
+    min-height: 35vw !important;
+  }
+
+  @media screen and (max-width:567px){
+    min-height: 90vw !important;
+  }
+}
+
+.experience-card-content .experience-card-text-holder.teesha {
+  @media screen and (max-width:567px) {
+    margin-top: -16vw;
+  }
+}
+
+.experience-card-content .experience-card-text-holder.tejas {
+  @media screen and (max-width:567px) {
+    margin-top: -35vw;
+  }
+}
+
+.experience-card-content .experience-card-text-holder.aditi {
+  @media screen and (max-width:567px) {
+    margin-top: -77vw;
+  }
 }
 
 .card-title {
@@ -7075,4 +7108,73 @@ figcaption {
   }
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* CARD STYLES */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.card {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #f0f0f0;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+.card h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: 'Logirent', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.card p, .card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+}
+.card p {
+  inset: auto auto 80px 30px;
+}
+.card a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+.card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+.card:hover p, .card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+.material-symbols-outlined {
+  vertical-align: middle;
+}
