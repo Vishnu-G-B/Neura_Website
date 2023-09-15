@@ -4003,6 +4003,17 @@ figcaption {
   }
 }
 
+.experience-card-content .experience-card-text-holder.harshvardhan {
+  /* line-height: 0.01; */
+  @media screen and (max-width:1300px) {
+    margin-top: -4.5vw;
+  }
+}
+
+.experience-card-text-holder.harshvardhan .card-title {
+  line-height: 1;
+}
+
 .experience-card-content .experience-card-text-holder.tejas {
   @media screen and (max-width:567px) {
     margin-top: -35vw;

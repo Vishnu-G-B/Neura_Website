@@ -513,7 +513,10 @@ section.timeline-section {
   flex-direction: column;
   margin: 20px auto;
   position: relative;
-  max-height: 1500px;
+  max-height: 1800px;
+  @media screen and (max-width: 567px) {
+    min-height: 1250px;
+  }
 }
 .timeline__event {
   margin-bottom: 20px;
