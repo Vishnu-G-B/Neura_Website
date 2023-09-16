@@ -3997,6 +3997,24 @@ figcaption {
   }
 }
 
+.experience-card-image-holder._02 .experience-card-image.dev {
+  object-fit: cover;
+  min-height: 29vw;
+  @media screen and (max-width:1200px) {
+    min-height: 35vw !important;
+  }
+
+  @media screen and (max-width:567px){
+    min-height: 90vw !important;
+  }
+}
+
+.experience-card-content .experience-card-text-holder.kavin {
+  @media screen and (max-width:567px) {
+    margin-top: -8vw;
+  }
+}
+
 .experience-card-content .experience-card-text-holder.teesha {
   @media screen and (max-width:567px) {
     margin-top: -16vw;
@@ -4006,7 +4024,7 @@ figcaption {
 .experience-card-content .experience-card-text-holder.harshvardhan {
   /* line-height: 0.01; */
   @media screen and (max-width:1300px) {
-    margin-top: -4.5vw;
+    margin-top: -4vw;
   }
 }
 
