@@ -5348,6 +5348,20 @@ figcaption {
   margin: 0 0 20px 0;
 }
 
+.experience-wrapper.last-right {
+  margin-right: 14vw;
+  @media screen and (max-width:567px){
+    margin-right: 0;
+  }
+}
+
+.experience-wrapper.last-left {
+  margin-left: 14vw;
+  @media screen and (max-width:567px) {
+    margin-left: 0;
+  }
+}
+
 .light-wrapper {
   position: absolute;
   z-index: 4;
