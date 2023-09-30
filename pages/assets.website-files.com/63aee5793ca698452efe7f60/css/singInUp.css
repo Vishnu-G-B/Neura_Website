@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   /* margin: 20px; */
-  margin-top: 110px;
+  margin-top: 120px;
 
   @media screen and (max-width:567px) {
     flex-direction: column;
@@ -23,8 +23,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 100px;
   margin-top: -30px;
+  width: 60vw;
 
   @media screen and (max-width:567px) {
     margin-right: 0;
@@ -53,9 +53,9 @@
   border-radius: 10px;
   border: 1px solid #bdadc5;
   box-shadow: 0 0 30px 18px #2e2424;
-  padding: 20px;
+  padding: 10px;
   /* text-align: center; */
-  width: 30vw;
+  width: 50vw;
   min-width: 370px;
   height: auto;
   display: flex;
@@ -78,7 +78,7 @@
 
 .login-form .title h2{
   margin-top: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 10px; */
   font-size: 4.5vw;
   background-image: linear-gradient(
   90deg,
@@ -107,7 +107,7 @@
 }
 
 .input-container {
-  margin:20px;
+  flex: 0 0 48%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +115,7 @@
 }
 
 .mt {
-  margin: 10px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,11 +133,27 @@
 }
 
 .input-form {
-  display: flex;
-  flex-direction: column;
   flex: 0 0 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
   @media screen and (max-width:567px) {
     margin-top: -40px;
+    margin-left: 0;
+    flex-direction: column;
+  }
+}
+
+.input-container select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: #161b22;
+  @media screen and (max-width:567px) {
+    width: 100%;
   }
 }
 
@@ -160,7 +176,7 @@ input[type="password"] {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 40px;
 
   @media screen and (max-width:567px) {
     flex: 0 0 100%;

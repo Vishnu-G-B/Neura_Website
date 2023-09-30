@@ -1,11 +1,36 @@
 const endPoint = "https://neura-ai-backend.vercel.app/";
+
 function signUpRequest() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     const confPassword = document.getElementById("conf-password").value;
+    const phone_number = document.getElementById("phNo").value;
     const loginButton = document.getElementById("sign-up");
+    const branchDropdown = document.getElementById("select1");
+    const branch = branchDropdown.options[branchDropdown.selectedIndex].text;
+    const year = document.getElementById("select2").value;
     loginButton.textContent = "Loading...";
     loginButton.disabled = true;
+
+    console.log(username,"+",password,"+",phone_number,"+",branch,"+",year);
+    if(username.includes("@learner.manipal.edu") === false ){
+        appendAlert("Please enter you learner email ID!!");
+        setTimeout(() => {
+            try {
+                const alertParentDiv = document.getElementById("liveAlertPlaceholder");
+                const alertChild = document.getElementById("removable");
+                alertParentDiv.classList.remove("liveAlertPlaceholder");
+                alertChild.remove();
+                loginButton.textContent = "Sign Up";
+                loginButton.disabled = false;
+
+            } catch (error) {
+                console.log("I can't be fkin asked", error.message); 
+            }
+            
+        }, 3000);
+        return;
+    }
     
     if (password === confPassword) {
 
@@ -15,6 +40,9 @@ function signUpRequest() {
         const body = JSON.stringify({
             email_id: username,
             password: password,
+            phone_number: phone_number,
+            branch: branch,
+            year: year,
         });
         xhr.onload = () => {
             
@@ -47,11 +75,11 @@ function signUpRequest() {
                         console.log("ERROR",response);
                     }
                 };
-        xhr2.send(body2);
+                xhr2.send(body2);
 
             }
             else {
-                console.log(response);
+                // console.log(response);
                 console.log("You probably have an account with us already");
                 appendAlert("ACCOUNT ALREADY EXISTS!");
                 setTimeout(() => {
@@ -65,7 +93,7 @@ function signUpRequest() {
                         loginButton.disabled = false;
 
                     } catch (error) {
-                       console.log("I can't be fkin asked"); 
+                       console.log("I can't be fkin asked", error.message); 
                     }
                     
                 }, 3000);
@@ -100,6 +128,25 @@ function signInRequest() {
     loginButton.textContent = "Loading...";
     loginButton.disabled = true;
 
+    if(username.includes("@learner.manipal.edu") === false ){
+        appendAlert("Please enter you learner Email ID!!");
+        setTimeout(() => {
+            try {
+                const alertParentDiv = document.getElementById("liveAlertPlaceholder");
+                const alertChild = document.getElementById("removable");
+                alertParentDiv.classList.remove("liveAlertPlaceholder");
+                alertChild.remove();
+                loginButton.textContent = "Sign Up";
+                loginButton.disabled = false;
+
+            } catch (error) {
+                console.log("I can't be fkin asked", error.message); 
+            }
+            
+        }, 3000);
+        return;
+    }
+
     const xhr = new XMLHttpRequest();
     xhr.open("POST", endPoint + "auth/signin");
     xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
@@ -122,6 +169,7 @@ function signInRequest() {
         else {
             console.log(response.status);
             console.log("INCORRECT PASSWORD");
+            appendAlert("Incorrect Password!!");
             setTimeout(() => {
                 
                 try {
@@ -226,6 +274,10 @@ function getCookie(cname) {
     return "";
 }
 
+function isLearnerEmail(email) {
+    return email.includes("@learner.manipal.edu");
+}
+
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message) => {
     const wrapper = document.createElement('div')
@@ -247,3 +299,31 @@ const createQRDiv = (content,divId) => {
         correctLevel : QRCode.CorrectLevel.M
     });
 }
+
+const branchDropdown = document.getElementById("select1");
+const yearDropDown = document.getElementById("select2");
+let optionDeleted = false;
+
+function blockChoices() {
+    if (yearDropDown.value != 1) {
+        if (!optionDeleted) {
+            const optionToDelete = branchDropdown.querySelector('[value="option4"]');
+            if (optionToDelete) {
+                branchDropdown.removeChild(optionToDelete);
+                optionDeleted = true;
+            }
+        }
+    } else {
+        if (optionDeleted) {
+            const option = document.createElement("option");
+            option.text = "CSE Data Science";
+            option.value = "option4"; // Set the value to "option4"
+            branchDropdown.appendChild(option);
+            optionDeleted = false;
+        }
+    }
+}
+
+blockChoices();
+yearDropDown.addEventListener("change", blockChoices);
+yearDropDown.dispatchEvent(new Event("change"));
