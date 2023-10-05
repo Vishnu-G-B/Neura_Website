@@ -136,7 +136,7 @@ function signInRequest() {
                 const alertChild = document.getElementById("removable");
                 alertParentDiv.classList.remove("liveAlertPlaceholder");
                 alertChild.remove();
-                loginButton.textContent = "Sign Up";
+                loginButton.textContent = "Login";
                 loginButton.disabled = false;
 
             } catch (error) {
@@ -177,6 +177,9 @@ function signInRequest() {
                     const alertChild = document.getElementById("removable");
                     alertParentDiv.classList.remove("liveAlertPlaceholder");
                     alertChild.remove();
+                    loginButton.textContent = "Login";
+                    loginButton.disabled = false;
+                    
                 } catch (error) {
                    console.log("I can't be fkin asked",error.message); 
                 }
@@ -245,6 +248,15 @@ function checkLoggedIn() {
                 console.log("Cookies have expired");
                 window.location.replace("login.html");
             }
+            //Implement some logic so that the persons name gets stored(USE COOKIES) and this gets checked only after the initial signUp
+            //So that the index page is still initially viewable
+            //******** */
+            // const linkElement = document.getElementById("interactive-name");
+            // if (xhr.status == 200){
+            //     linkElement.innerHTML = "Hello!"
+            //     linkElement.href = " ";
+            // }
+
         }
         xhr.send(body);
 
@@ -327,3 +339,8 @@ function blockChoices() {
 blockChoices();
 yearDropDown.addEventListener("change", blockChoices);
 yearDropDown.dispatchEvent(new Event("change"));
+
+function getNewsArticles() {
+    const endPoint = ""
+    const xhr = new XMLHttpRequest();
+}

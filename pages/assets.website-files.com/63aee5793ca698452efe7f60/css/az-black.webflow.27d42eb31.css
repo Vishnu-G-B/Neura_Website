@@ -7070,6 +7070,7 @@ figcaption {
   }
 }
 
+
 .banner video {
   position: absolute;
   top: 0;
@@ -7095,6 +7096,57 @@ figcaption {
   text-align: center;
   mix-blend-mode: multiply;
   user-select: none;
+}
+
+.banner-team {
+  position: absolute;
+  width: 80vw;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width:567px){
+    width: 90vw;
+    height: 10vh;
+  }
+}
+
+.banner-team video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.banner-team p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Logirent";
+  font-size: 14vw;
+  font-weight: 800;
+  background-color: #000;
+  color: #fff;
+  font-size: 14vw;
+  text-align: center;
+  mix-blend-mode: multiply;
+  user-select: none;
+  overflow-wrap: break-word;
+}
+
+div.section.team-section {
+  margin-top: 100px;
+  @media screen and (max-width:567px) {
+    margin-top: -20px;
+  }
 }
 
 .title-holder h1.title{
