@@ -1,4 +1,4 @@
-const endPoint = "https://neura-ai-backend.vercel.app/";
+const endPoint = "https://api.neura-ai.club/";
 
 function signUpRequest() {
     const username = document.getElementById("username").value;
