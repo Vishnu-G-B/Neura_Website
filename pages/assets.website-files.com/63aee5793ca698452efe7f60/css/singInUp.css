@@ -493,6 +493,42 @@ button[type="submit"]:hover {
   margin: 0;
   padding: 0;
   background-size: 300% auto;
+  line-height: 150px;
+
+  @media screen and (max-width:567px) {
+    font-size: 17vw;
+  }
+
+  animation: textShine 4s ease-in-out infinite alternate;
+}
+.features-number h5.event-page {
+  background-image: linear-gradient(
+  90deg,
+  hsl(180deg 57% 24%) 0%,
+  hsl(180deg 59% 26%) 6%,
+  hsl(180deg 62% 28%) 12%,
+  hsl(180deg 64% 30%) 17%,
+  hsl(180deg 67% 32%) 22%,
+  hsl(180deg 52% 38%) 27%,
+  hsl(180deg 39% 45%) 33%,
+  hsl(180deg 32% 50%) 39%,
+  hsl(180deg 32% 56%) 45%,
+  hsl(180deg 31% 57%) 52%,
+  hsl(180deg 27% 48%) 61%,
+  hsl(180deg 32% 40%) 70%,
+  hsl(180deg 40% 32%) 82%,
+  hsl(180deg 57% 24%) 100%
+);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3vw;
+  font-weight: 800;
+  font-family: "Logirent";
+  margin: 0;
+  padding: 0;
+  background-size: 300% auto;
+  line-height: 50px;
 
   @media screen and (max-width:567px) {
     font-size: 17vw;
