@@ -286,7 +286,14 @@ function checkLoggedIn() {
 // setTimeout(getQR,1000);
 
 function createCookie(key,value) { // Can add a 'expires' param here in the future
-    document.cookie = key + "=" + value + "; path=/";
+    let now  = new Date();
+    // let time = now.getTime();
+    // let expireTime = time + 1000*36000;
+    // console.log(expireTime.);
+    now.setTime(+now + (60* 60 *1000));
+    console.log(now.toUTCString());
+    document.cookie = key + "=" + value + "; expires="+now.toUTCString()+";path=/";
+    
 }
 
 function getCookie(cname) {
