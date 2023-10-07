@@ -81,7 +81,7 @@ function signUpRequest() {
             else {
                 // console.log(response);
                 console.log("You probably have an account with us already");
-                appendAlert("ACCOUNT ALREADY EXISTS!");
+                appendAlert(response.detail);
                 setTimeout(() => {
                 
                     try {
@@ -166,10 +166,10 @@ function signInRequest() {
             window.location.replace("events.html");
             
         }
-        else {
+        else{
             console.log(response.status);
             console.log("INCORRECT PASSWORD");
-            appendAlert("Incorrect Password!!");
+            appendAlert(response.detail);
             setTimeout(() => {
                 
                 try {
@@ -181,11 +181,28 @@ function signInRequest() {
                     loginButton.disabled = false;
                     
                 } catch (error) {
-                   console.log("I can't be fkin asked",error.message); 
+                   console.log("ALERT PLACEHOLDER NOT FOUND",error.message); 
                 }
                 
             }, 3000);
         }
+        // else {
+        //     console.log(response.status);
+        //     console.log("Something other than 422");
+        //     appendAlert("ERROR");
+        //     setTimeout(()=> {
+        //         try{
+        //             const alertParentDiv = document.getElementById("liveAlertPlaceholder");
+        //             const alertChild = document.getElementById("removable");
+        //             alertParentDiv.classList.remove("liveAlertPlaceholder");
+        //             alertChild.remove();
+        //             loginButton.textContent = "Login";
+        //             loginButton.disabled = false;
+        //         } catch(error){
+        //             console.log("ALERT PLACEHOLDER NOT FOUND", error.message);
+        //         }
+        //     },3000)
+        // }
     };
     xhr.send(body);
 }
