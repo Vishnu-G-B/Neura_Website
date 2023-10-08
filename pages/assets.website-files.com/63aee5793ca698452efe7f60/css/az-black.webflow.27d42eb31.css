@@ -4023,7 +4023,19 @@ figcaption {
 
 .experience-card-content .experience-card-text-holder.harshvardhan {
   /* line-height: 0.01; */
+  @media screen and (max-width:1120px) {
+    margin-top: -10vw;
+  }
   @media screen and (max-width:1300px) {
+    margin-top: -4vw;
+  }
+  @media screen and (max-width:1500px) {
+    margin-top: -4vw;
+  }
+}
+
+.experience-card-content .experience-card-text-holder.general {
+  @media screen and (max-width:1500px) {
     margin-top: -4vw;
   }
 }
