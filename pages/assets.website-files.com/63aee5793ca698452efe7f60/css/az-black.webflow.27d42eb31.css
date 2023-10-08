@@ -4024,7 +4024,7 @@ figcaption {
 .experience-card-content .experience-card-text-holder.harshvardhan {
   /* line-height: 0.01; */
   @media screen and (max-width:1120px) {
-    margin-top: -10vw;
+    margin-top: -6vw;
   }
   @media screen and (max-width:1300px) {
     margin-top: -4vw;
