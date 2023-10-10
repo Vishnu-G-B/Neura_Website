@@ -344,17 +344,23 @@ function blockChoices() {
     if (yearDropDown.value != 1) {
         if (!optionDeleted) {
             const optionToDelete = branchDropdown.querySelector('[value="option4"]');
+            const optionToDelete2 = branchDropdown.querySelector('[value="option7"]');
             if (optionToDelete) {
                 branchDropdown.removeChild(optionToDelete);
+                branchDropdown.removeChild(optionToDelete2);
                 optionDeleted = true;
             }
         }
     } else {
         if (optionDeleted) {
-            const option = document.createElement("option");
-            option.text = "CSE Data Science";
-            option.value = "option4"; // Set the value to "option4"
-            branchDropdown.appendChild(option);
+            const option1 = document.createElement("option");
+            option1.text = "CSE Data Science";
+            option1.value = "option4"; 
+            branchDropdown.appendChild(option1);
+            const option2 = document.createElement("option");
+            option2.text = "ENC";
+            option2.value = "option7"; 
+            branchDropdown.appendChild(option2);
             optionDeleted = false;
         }
     }
