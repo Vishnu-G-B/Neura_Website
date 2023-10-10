@@ -156,7 +156,7 @@
     width: 100%;
   }
 }
-
+input[type="number"],
 input[type="text"],
 input[type="password"] {
   width: 80%;
@@ -168,6 +168,15 @@ input[type="password"] {
   @media screen and (max-width:567px) {
     width: 100%;
   }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .button-container {

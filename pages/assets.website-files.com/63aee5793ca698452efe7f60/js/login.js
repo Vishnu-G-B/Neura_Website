@@ -4,13 +4,14 @@ function signUpRequest() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     const confPassword = document.getElementById("conf-password").value;
-    const phone_number = document.getElementById("phNo").value;
+    const phone_number = document.getElementById("phNo").value.replace(/ /g,'');
     const loginButton = document.getElementById("sign-up");
     const branchDropdown = document.getElementById("select1");
     const branch = branchDropdown.options[branchDropdown.selectedIndex].text;
     const year = document.getElementById("select2").value;
     loginButton.textContent = "Loading...";
     loginButton.disabled = true;
+    console.log(typeof(phone_number), phone_number);
 
     console.log(username,"+",password,"+",phone_number,"+",branch,"+",year);
     if(username.includes("@learner.manipal.edu") === false ){
