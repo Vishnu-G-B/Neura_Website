@@ -7404,6 +7404,10 @@ section.timersection p.timedescription {
 	width: 90vmin;
 }
 
+h2 {
+	text-align: center;
+}
+
 .team {
 	padding: 2em 0 2em 2.5em;
 	margin: 0;
